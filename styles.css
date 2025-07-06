@@ -1,0 +1,99 @@
+canvas {
+    width: 98vw;
+    height: 75vh;
+    border: 2px solid #000;
+    background: url('img/wall.jpg');
+    background-size:contain;
+    cursor: url('img/cursor.png'),auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.2em;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+#sprayIcon {
+  width: 64px;
+  height: 64px;
+  background-image: url('img/spray.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ff0000; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#washbtn {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.103);
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  font-size: 2.6em;
+}
+
+.jello {
+  animation: jello-vertical 0.9s both;
+}
+
+@keyframes jello-vertical {
+  0%   { transform: scale3d(1, 1, 1); }
+  30%  { transform: scale3d(0.75, 1.25, 1); }
+  40%  { transform: scale3d(1.25, 0.75, 1); }
+  50%  { transform: scale3d(0.85, 1.15, 1); }
+  65%  { transform: scale3d(1.05, 0.95, 1); }
+  75%  { transform: scale3d(0.95, 1.05, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
+.shake {
+  animation: shake-lr 0.8s both;
+}
+
+@keyframes shake-lr {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+.tools {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2em;
+        align-items: center;
+        background: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        margin: 0 1em;
+        padding: 1.5em 2em;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        gap: 1em;
+      }
+
+      body{
+        background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      }

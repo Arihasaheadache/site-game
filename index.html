@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graffiti Wall :D</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Arya's Graffiti Wall</h1>
+
+    <canvas id="wall"></canvas><br>
+<div class="tools">
+<input type="color" id="colorPicker" value="#ff0000" style="display: none;">
+<div id="sprayIcon" onclick="openColorPicker()"></div>
+<button onclick="wash()" id="washbtn">🧽</button>
+<label>Granularity: <input type="range" id="granularity" class="granularity" min="0" max="50" step="5" value="30"></label>
+<label>Spray Size: <input type="range" id="spraySize" min="1" max="10" step="0.1"value="3"></label>
+<label>Drip Amount:<input type="range" id="dripAmount" min="0" max="100" value="3"></label>
+
+  <select id="sprayType">
+    <option value="dot">Dot</option>
+    <option value="square">Square</option>
+    <option value="star">Star</option>
+  </select>
+</div>
+ 
+    <script src="script.js"></script>
+  </body>
+</html>
